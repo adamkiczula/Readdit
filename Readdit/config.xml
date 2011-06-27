@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <widget xmlns="http://www.w3.org/ns/widgets" height="200" id="http://Readditt" version="1.0.0" viewmodes="windowed fullscreen" width="200">
     
-    <name short="ExampleBasic">Readditt</name>    
+    <name short="ExampleBasic">Readdit</name>    
 
     <description>
-       An example Basic Series 40 web app runtime.
+      A simple Reddit web app
     </description>
     
     <!-- Note: Author href MUST BE Url encoded 
