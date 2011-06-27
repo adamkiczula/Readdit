@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <widget xmlns="http://www.w3.org/ns/widgets" height="200" id="http://Readditt" version="1.0.0" viewmodes="windowed fullscreen" width="200">
+    
+    <name short="ExampleBasic">Readditt</name>    
+
+    <description>
+       An example Basic Series 40 web app runtime.
+    </description>
+    
+    <!-- Note: Author href MUST BE Url encoded 
+        @see http://en.wikipedia.org/wiki/Percent-encoding -->   
+    <author email="john.doe@example.com" href="http://www.example.com">
+        John Doe
+    </author>
+    
+    <icon src="icon.png"/>
+
+    <content src="index.html"/>
+    
+    <license>
+	   Copyright Foo Bar Corp, 2011.
+    </license>
+    
+   	<feature name="nokia://s40.nokia.com/SAWRT/1.0 " required="true" />
+</widget>
