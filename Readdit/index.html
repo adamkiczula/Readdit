@@ -100,12 +100,12 @@
         else
           count -= 25
       }
-      loadJSON('http://www.reddit.com/.json?jsonp=processJSON');
+      
     </script>
     <title>readdit: reddit for S40</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
   </head>
-<body>
+<body onload="loadJSON('http://www.reddit.com/.json?jsonp=processJSON');">
   
     <a href="http://www.reddit.com"><img src="images/header.png" /></a>
     <hr />
