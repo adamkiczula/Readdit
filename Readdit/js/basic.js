@@ -22,7 +22,7 @@ function processJSON(json)
   }
   if(json.data.after)
     addLink('#', 'next', 'changeCount(true);loadJSON(\'http://www.reddit.com/.json?count=' + count + '&after=' + json.data.after + '&jsonp=processJSON\');', null, target);
-  target.appendChild(document.createElement('hr'));
+  target.appendChild(addLineBreak());
   // END DUPLICATE CODE
   for(i=0; i<json.data.children.length; i++)
   {
@@ -37,7 +37,7 @@ function processJSON(json)
     newDiv.innerHTML += '&nbsp;/&nbsp;'
     addSpan(json.data.children[i].data.downs, 'downvotes', 'downvotes_' + json.data.children[i].data.id, newDiv);
     newDiv.innerHTML += ')'
-    newDiv.appendChild(document.createElement('hr'));
+    newDiv.appendChild(addLineBreak());
   }
   if(json.data.before)
   {
@@ -78,4 +78,11 @@ function changeCount(increment)
     count += 25;
   else
     count -= 25
+}
+
+function addLineBreak() {
+	var lineBreakElement = document.createElement("div");
+	lineBreakElement.setAttribute('class', 'line_break');
+	
+	return lineBreakElement;
 }

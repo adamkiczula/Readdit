@@ -10,3 +10,8 @@ a img
 {
   color: #9494FF;
 }
+
+.line_break {
+	height:0px;
+	border:1px solid black;
+}
